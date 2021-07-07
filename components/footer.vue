@@ -2,7 +2,7 @@
   <section class="footer-part">
     <div class="link-line flex-hb">
       <img :src="logo" />
-      <div @click="linkTo('/')">咨询服务</div>
+      <div @click="linkTo('/service')">咨询服务</div>
       <div @click="linkTo('/about')">关于我们</div>
       <div @click="linkTo('/plan')">校园计划</div>
     </div>

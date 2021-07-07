@@ -132,3 +132,6 @@ img[lazy=loading], img[lazy=error]{
 sup {
   font-size: 0.4em;
 }
+i {
+  font-style: normal;
+}
