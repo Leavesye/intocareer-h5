@@ -7,8 +7,8 @@
       <div @click="linkTo('/plan')">校园计划</div>
     </div>
     <div class="link-line flex-hb">
-      <div @click="linkTo('https://intocareer.cn/html/cookies.html')">IntoCareer Cookies 政策</div>
-      <div @click="linkTo('https://intocareer.cn/html/yinsi.html')">IntoCareer 隐私政策</div>
+      <div @click="linkTo(`/terms?url=${encodeURIComponent('/IntoCareerCookies.pdf')}`)">IntoCareer Cookies 政策</div>
+      <div @click="linkTo(`/terms?url=${encodeURIComponent('/IntoCareerPrivatePolice.pdf')}`)">IntoCareer 隐私政策</div>
     </div>
     <ul class="flex-he icon-list">
       <li v-for="(o,i) in icons"
