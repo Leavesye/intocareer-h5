@@ -20,8 +20,8 @@ export default {
         { text: '咨询服务', link: '/service' },
         { text: '关于我们', link: '/about' },
         { text: '校园计划', link: '/plan' },
-        { text: 'IntoCareer Cookies 政策', link: 'https://intocareer.cn/html/cookies.html' },
-        { text: 'IntoCareer 隐私政策', link: 'https://intocareer.cn/html/yinsi.html'  },
+        { text: 'IntoCareer Cookies 政策', link: `/terms?url=${encodeURIComponent('/IntoCareer Cookies政策.pdf')}`},
+        { text: 'IntoCareer 隐私政策', link: `/terms?url=${encodeURIComponent('/IntoCareer 隐私政策.pdf')}`   },
       ]
     }
   },

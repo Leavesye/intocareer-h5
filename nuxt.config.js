@@ -50,6 +50,7 @@ export default {
       src: '@/assets/js/iconfont.js',
       ssr: false
     },
+    { src: '@/plugins/vue-pdf.js', ssr: false }
   ],
 
   // Auto import components (https://go.nuxtjs.dev/config-components)
@@ -86,6 +87,7 @@ export default {
      ** You can extend webpack config here
      */
     extend(config, ctx) {
+      // svg
       const svgRule = config.module.rules.find(rule => rule.test.test('.svg'))
       svgRule.exclude = [path.resolve(__dirname, './icons/svg')]
 
@@ -98,6 +100,14 @@ export default {
           symbolId: 'icon-[name]',
         },
       })
+      // pdf
+      config.output.globalObject = 'this'
+      config.module.rules.push(
+        {
+          test: /\.pdf$/,
+          loader: 'url-loader'
+        }
+      )
     }
   }
 }
