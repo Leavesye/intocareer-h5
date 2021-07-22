@@ -11,7 +11,7 @@
         <p>帮你洞见真实职场，</p>
         <p>让信息差无处躲藏</p>
       </div>
-      <div class="top-btn">了解更多</div>
+      <a class="top-btn" href="/service">了解更多</a>
     </section>
     <section class="intro">
       <h1 class="intro-title">消除求职信息差，我们是专业的！</h1>
@@ -159,6 +159,8 @@ export default {
   margin-left: 80px;
 }
 .top-btn {
+  display: block;
+  text-decoration: none;
   background: #ffffff;
   border-radius: 28px;
   border-radius: 28px;

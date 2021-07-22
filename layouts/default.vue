@@ -20,6 +20,7 @@ export default {
         { text: '咨询服务', link: '/service' },
         { text: '关于我们', link: '/about' },
         { text: '校园计划', link: '/plan' },
+        { text: '咨询者注册', link: 'https://intocareer.cn/register/consumer' },
         { text: 'IntoCareer Cookies 政策', link: `/terms?url=${encodeURIComponent('/IntoCareerCookies.pdf')}`},
         { text: 'IntoCareer 隐私政策', link: `/terms?url=${encodeURIComponent('/IntoCareerPrivatePolice.pdf')}`},
       ]
@@ -59,6 +60,9 @@ html {
 }
 body {
   height: 100%;
+  -webkit-text-size-adjust: 100% !important;  
+  text-size-adjust: 100% !important;  
+  -moz-text-size-adjust: 100% !important;  
 }
 *,
 *::before,
